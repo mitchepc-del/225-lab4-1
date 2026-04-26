@@ -37,8 +37,9 @@ def index():
         # check key value
 
         key = request.form.get('key')
-        if key!=1234
+        if key!=1234:
             message = 'Invalid Key.'
+            return
         
         # Check if it's a delete action
         if request.form.get('action') == 'delete':

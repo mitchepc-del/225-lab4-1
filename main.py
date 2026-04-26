@@ -36,9 +36,9 @@ def index():
         message = 'OK'
         # check key value
 
-        ##key = request.form.get('key')
-        ##if key!=1234
-          ##  return redirect(url_for('index', message="invalid key"))
+        key = request.form.get('key')
+        if key!=1234
+            message = 'Invalid Key.'
         
         # Check if it's a delete action
         if request.form.get('action') == 'delete':

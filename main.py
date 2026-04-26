@@ -37,7 +37,7 @@ def index():
         # check key value
 
         key = request.form.get('key')
-        if key!=1234:
+        if key!="1234":
             message = 'Invalid Key.'
             return redirect(url_for('index', message=message))
         

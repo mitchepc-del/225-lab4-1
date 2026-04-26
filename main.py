@@ -79,6 +79,8 @@ def index():
         <body>
             <h2>Add Contact</h2>
             <form method="POST" action="{{ url_for('index') }}">
+                <label for="key">key:</label><br>
+                <input type="text" id="key" name="key" required><br>
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 <label for="phone">Phone Number:</label><br>

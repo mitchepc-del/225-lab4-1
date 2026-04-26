@@ -34,7 +34,12 @@ def index():
     if request.method == 'POST':
         # Default message if something unexpected happens
         message = 'OK'
+        # check key value
 
+        key = request.form.get('key')
+        if key!=1234
+            return redirect(url_for('index', message="invalid key"))
+        
         # Check if it's a delete action
         if request.form.get('action') == 'delete':
             contact_id = request.form.get('contact_id')

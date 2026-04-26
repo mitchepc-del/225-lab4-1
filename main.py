@@ -39,7 +39,7 @@ def index():
         key = request.form.get('key')
         if key!=1234:
             message = 'Invalid Key.'
-            return
+            return redirect(url_for('index', message=message))
         
         # Check if it's a delete action
         if request.form.get('action') == 'delete':
